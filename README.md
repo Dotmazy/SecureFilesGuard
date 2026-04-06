@@ -56,7 +56,9 @@ Si vous rencontrez un problème avec l'application (par exemple, un crash ou un 
 
 ## Licence
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet est sous la licence **GNU General Public License** (GPL). Vous êtes libre de l'utiliser, de le copier, de le modifier et de le redistribuer, tant que vous respectez les termes de cette licence.
+
+Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 ---
 
