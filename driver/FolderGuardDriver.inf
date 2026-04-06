@@ -1,0 +1,64 @@
+; FolderGuardDriver.inf
+; Fichier d'installation du minifilter FolderGuard
+
+[Version]
+Signature   = "$Windows NT$"
+Class       = "ActivityMonitor"
+ClassGuid   = {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}
+Provider    = %ManufacturerName%
+DriverVer   = 01/01/2025,1.0.0.0
+CatalogFile = FolderGuardDriver.cat
+PnpLockdown = 1
+
+[DestinationDirs]
+DefaultDestDir = 12   ; %windir%\system32\drivers
+MiniFilter.DriverFiles = 12
+
+[DefaultInstall.NTamd64]
+OptionDesc  = %ServiceDescription%
+CopyFiles   = MiniFilter.DriverFiles
+
+[DefaultInstall.NTamd64.Services]
+AddService  = %ServiceName%,,MiniFilter.Service
+
+[DefaultUninstall.NTamd64]
+LegacyUninstall = 1
+DelFiles   = MiniFilter.DriverFiles
+
+[DefaultUninstall.NTamd64.Services]
+DelService = %ServiceName%,0x200
+
+[MiniFilter.Service]
+DisplayName    = %ServiceName%
+Description    = %ServiceDescription%
+ServiceBinary  = %12%\%DriverName%.sys
+ServiceType    = 2 ; SERVICE_FILE_SYSTEM_DRIVER
+StartType      = 3 ; SERVICE_DEMAND_START
+ErrorControl   = 1 ; SERVICE_ERROR_NORMAL
+LoadOrderGroup = "FSFilter Activity Monitor"
+AddReg         = MiniFilter.AddRegistry
+
+[MiniFilter.AddRegistry]
+HKR,,"DebugFlags",0x00010001,0x0
+HKR,,"SupportedFeatures",0x00010001,0x3
+HKR,"Instances","DefaultInstance",0x00000000,%DefaultInstance%
+HKR,"Instances\"%DefaultInstance%,"Altitude",0x00000000,%MiniFilterAltitude%
+HKR,"Instances\"%DefaultInstance%,"Flags",0x00010001,0x0
+
+[MiniFilter.DriverFiles]
+%DriverName%.sys
+
+[SourceDisksFiles]
+FolderGuardDriver.sys = 1
+
+[SourceDisksNames]
+1 = %DiskId1%
+
+[Strings]
+ManufacturerName    = "FolderGuard"
+ServiceDescription  = "FolderGuard Minifilter Driver"
+ServiceName         = "FolderGuardDriver"
+DriverName          = "FolderGuardDriver"
+DiskId1             = "FolderGuard Device Installation Disk"
+DefaultInstance     = "FolderGuard Instance"
+MiniFilterAltitude  = "370010"
