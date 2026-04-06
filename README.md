@@ -2,6 +2,8 @@
 
 **SecureFilesGuard** est une application permettant de protéger des fichiers importants, comme des tokens de comptes. Elle a été développée en utilisant Claude, Mistral AI, et ChatGPT. Bien que l'application soit fonctionnelle, certains bugs peuvent se produire, et il arrive que l'explorateur Windows se bloque occasionnellement.
 
+Voici le lien de la conversation avec claude: https://claude.ai/share/330748bc-b283-4d0e-8349-00d5ae176ba7
+
 ## Fonctionnalités
 
 - **Protection des fichiers sensibles** : Protégez vos fichiers et dossiers importants.
