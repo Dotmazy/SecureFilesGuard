@@ -17,7 +17,7 @@
 
 ### Étape 1 : Télécharger le fichier
 
-1. Rendez-vous sur la [section des releases](https://github.com/ton-utilisateur/SecureFilesGuard/releases).
+1. Rendez-vous sur la [section des releases](https://github.com/Dotmazy/SecureFilesGuard/releases).
 2. Téléchargez le fichier ZIP de la dernière version.
 
 ### Étape 2 : Installer le logiciel
@@ -46,7 +46,13 @@
 
 ## Contribution
 
-Les contributions sont les bienvenues ! Si vous souhaitez améliorer l'application ou corriger des bugs, n'hésitez pas à ouvrir une *pull request*.
+Je ne suis pas un expert dans ce domaine, donc si vous avez des compétences ou des idées pour améliorer ce projet, n'hésitez pas à contribuer ! Vous pouvez soumettre des *pull requests* pour corriger des bugs, ajouter des fonctionnalités, ou améliorer la performance du projet.
+
+Si vous trouvez un bug ou une anomalie, vous pouvez également ouvrir une **issue**. Bien que je ne sois pas toujours en mesure de résoudre rapidement les problèmes, je ferai de mon mieux pour les examiner et essayer de les corriger. Vos retours et contributions sont très appréciés.
+
+## Rapport de problèmes
+
+Si vous rencontrez un problème avec l'application (par exemple, un crash ou un comportement inattendu), merci de le signaler via une *issue* sur GitHub. Même si je ne pourrai pas toujours résoudre immédiatement les problèmes, je vais faire mon possible pour les analyser et fournir des solutions ou des suggestions.
 
 ## Licence
 
