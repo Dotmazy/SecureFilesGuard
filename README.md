@@ -24,7 +24,7 @@
 
 1. Décompressez le fichier ZIP téléchargé.
 2. Exécutez `install.bat` en tant qu'administrateur. Il vous sera demandé de redémarrer votre ordinateur.
-3. Après le redémarrage, vous verrez une icône dans le coin inférieur droit de votre écran (près de votre barre des tâches). Cette icône ne peut pas être supprimée, car elle est liée à un pilote que je ne peux pas signer sans un certificat payant.
+3. Après le redémarrage, vous verrez un texte dans le coin inférieur droit de votre écran (près de votre barre des tâches) disant que vous êtes en `Mode test`. Ce texte ne peut pas être supprimée, car elle est liée à un pilote que je ne peux pas signer sans un certificat payant.
 
 ### Étape 3 : Lancer le pilote
 
