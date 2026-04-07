@@ -11,7 +11,7 @@ This document provides detailed technical information about building and running
 ### Software
 
 * Windows 10/11 (x64)
-* Visual Studio (recommended: 2022)
+* Visual Studio (recommended: 2026)
 
   * Workloads:
 
